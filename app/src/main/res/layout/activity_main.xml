@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.scorekepperapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/footballpitch">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/MarginLeftB"
+                        android:layout_marginTop="@dimen/MarginTop"
+                        android:text="@string/TeamA"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/FontSize" />
+
+                    <TextView
+                        android:id="@+id/ScoreViewA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/MarginLeft"
+                        android:layout_marginTop="@dimen/MarginTopButtons"
+                        android:text="0"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/FontSize" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/MarginLeft"
+                        android:layout_marginTop="@dimen/MarginTop"
+
+                        android:onClick="viewGoalsA"
+                        android:text="@string/Goals"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/ShotsViewA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/MarginLeft"
+                        android:layout_marginTop="@dimen/MarginTop"
+                        android:text="0"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/FontSize"
+
+                        />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/MarginLeft"
+                        android:layout_marginTop="@dimen/MarginTop"
+                        android:onClick="viewShotsA"
+                        android:text="@string/Shots"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/FoulsViewA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/MarginLeft"
+                        android:layout_marginTop="@dimen/MarginTop"
+                        android:text="0"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/FontSize"
+
+                        />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/MarginLeft"
+                        android:layout_marginTop="@dimen/MarginTop"
+                        android:onClick="viewFoulsA"
+                        android:padding="@dimen/Paddingethrow"
+                        android:text="@string/Fouls"
+                        android:textColor="@color/colorPrimary" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/edittextB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/MarginLeftB"
+
+                        android:layout_marginTop="@dimen/MarginTop"
+                        android:paddingLeft="@dimen/MarginLeftB"
+                        android:text="@string/TeamB"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/FontSize" />
+
+                    <TextView
+                        android:id="@+id/ScoreViewB"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/MarginLeft"
+                        android:layout_marginTop="@dimen/MarginTopButtons"
+                        android:text="0"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/FontSize"
+
+                        />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/MarginLeft"
+                        android:layout_marginTop="@dimen/MarginTop"
+                        android:onClick="viewGoalsB"
+                        android:text="@string/Goals"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/ShotsViewB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/MarginLeft"
+                        android:layout_marginTop="@dimen/MarginTop"
+                        android:text="0"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/FontSize"
+
+                        />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/MarginLeft"
+                        android:layout_marginTop="@dimen/MarginTop"
+                        android:onClick="viewShotsB"
+                        android:text="@string/Shots"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/FoulsViewB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/MarginLeft"
+                        android:layout_marginTop="@dimen/MarginTop"
+                        android:text="0"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/FontSize"
+
+                        />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/MarginLeft"
+                        android:layout_marginTop="@dimen/MarginTop"
+                        android:onClick="viewFoulsB"
+                        android:padding="@dimen/Paddingethrow"
+                        android:text="@string/Fouls"
+                        android:textColor="@color/colorPrimary" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:layout_centerInParent="true"
+            android:onClick="resetButton"
+            android:text="@string/reset"
+            android:textColor="@color/colorPrimary" />
+        <RelativeLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:layout_centerInParent="true">
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

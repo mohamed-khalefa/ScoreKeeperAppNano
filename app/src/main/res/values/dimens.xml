@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <dimen name="MarginLeft">15dp</dimen>
+    <dimen name="FontSize">18sp</dimen>
+    <dimen name="MarginTop">10dp</dimen>
+    <dimen name="MarginTopButtons">40dp</dimen>
+    <dimen name="Paddingethrow">1dp</dimen>
+    <dimen name="MarginRightA">5dp</dimen>
+    <dimen name="MarginLeftB">5dp</dimen>
+
+</resources>
